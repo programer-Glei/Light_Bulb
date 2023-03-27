@@ -3,3 +3,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #222;
+}
