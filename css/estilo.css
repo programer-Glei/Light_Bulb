@@ -36,5 +36,14 @@ body {
   width: 35px;
   height: 80px;
   background: #444;
+  border-top: 30px solid #000;
+  border-radius: 10px;
+}
+
+.bulb span:nth-child(1) {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
 }
 /*# sourceMappingURL=estilo.css.map */
