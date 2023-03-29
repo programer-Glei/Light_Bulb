@@ -32,8 +32,14 @@ body{
 
     span:nth-child(1){
         position: absolute;
+        top: -16px;
+        left: -4px;
         display: block;
         width: 30px;
         height: 30px;
+        background: transparent;
+        transform: rotate(342deg);
+        border-bottom-right-radius: 40px;
+        box-shadow: 20px 20px 0 10px #444;
     }
 }
