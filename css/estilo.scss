@@ -17,4 +17,14 @@ body{
     height: 80px;
     background: #444;
     border-radius: 50%;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: -50px;
+        left: 22.5px;
+        width: 35px;
+        height: 80px;
+        background: #444;
+    }
 }
