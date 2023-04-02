@@ -80,4 +80,25 @@ body {
   -webkit-box-shadow: -20px 20px 0 10px #444;
           box-shadow: -20px 20px 0 10px #444;
 }
+
+.switch {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), color-stop(#ccc), to(#eee));
+  background: linear-gradient(#eee, #ccc, #eee);
+  border: 3px solid #000;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=estilo.css.map */
