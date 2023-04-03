@@ -45,6 +45,20 @@ body.on .bulb::after {
           filter: blur(40px);
 }
 
+body.on .bulb::before {
+  background: #fff;
+}
+
+body.on .bulb span:nth-child(1) {
+  -webkit-box-shadow: 20px 20px 0 10px #fff;
+          box-shadow: 20px 20px 0 10px #fff;
+}
+
+body.on .bulb span:nth-child(2) {
+  -webkit-box-shadow: -20px 20px 0 10px #fff;
+          box-shadow: -20px 20px 0 10px #fff;
+}
+
 .wire {
   position: absolute;
   left: calc(50% - 2px);
