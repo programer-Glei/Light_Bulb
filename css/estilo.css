@@ -20,6 +20,31 @@ body {
   background: #222;
 }
 
+body.on {
+  background: radial-gradient(#555, #111);
+}
+
+body.on .bulb {
+  background: #fff;
+  -webkit-box-shadow: 0 0 50px #fff, 0 0 100px #fff, 0 0 150px #fff, 0 0 200px #fff, 0 0 250px #fff, 0 0 300px #fff, 0 0 350px #fff;
+          box-shadow: 0 0 50px #fff, 0 0 100px #fff, 0 0 150px #fff, 0 0 200px #fff, 0 0 250px #fff, 0 0 300px #fff, 0 0 350px #fff;
+}
+
+body.on .bulb::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
 .wire {
   position: absolute;
   left: calc(50% - 2px);
@@ -127,5 +152,9 @@ body {
 
 .on .switch .btn::before {
   top: 15%;
+}
+
+#audio {
+  display: none;
 }
 /*# sourceMappingURL=estilo.css.map */

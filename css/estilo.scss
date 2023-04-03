@@ -9,6 +9,27 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #222;
+
+    &.on{
+        background: radial-gradient(#555, #111);
+
+        .bulb{
+            background: #fff;
+            box-shadow: 0 0 50px #fff, 0 0 100px #fff, 0 0 150px #fff, 0 0 200px #fff, 0 0 250px #fff, 0 0 300px #fff, 0 0 350px #fff;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 120px;
+                height: 120px;
+                background: #fff;
+                border-radius: 50%;
+                filter: blur(40px);
+            }
+        }
+    }
 }
 
 .wire{
@@ -111,4 +132,8 @@ body{
             }
         }
     }
+}
+
+#audio{
+    display: none;
 }
